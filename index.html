@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Using Javascript</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <form name="calcy">
+            <input type="text" name="answer" id="display_answer" placeholder="0">
+
+
+            <div class="layer-2">
+                <input type="button" value="AC" id="clearbtn" onclick="calcy.answer.value = ''">
+                <input type="button" name="" class="main_num" value="Del" onclick="calcy.answer.value = calcy.answer.value.substring(0, calcy.answer.value.length*1-1) ">
+                <input type="button" name="" class="oper" value="/" onclick="calcy.answer.value += '/' ">
+            </div>
+
+            <div class="layer-1">
+                <input type="button" name="" class="main_num" value="7" onclick="calcy.answer.value += '7' ">
+                <input type="button" name="" class="main_num" value="8" onclick="calcy.answer.value += '8' ">
+                <input type="button" name="" class="main_num" value="9" onclick="calcy.answer.value += '9' ">
+                <input type="button" name="" class="oper" value="*" onclick="calcy.answer.value += '*' ">
+           
+            
+                <input type="button" name="" class="main_num" value="4" onclick="calcy.answer.value += '4' ">
+                <input type="button" name="" class="main_num" value="5" onclick="calcy.answer.value += '5' ">
+                <input type="button" name="" class="main_num" value="6" onclick="calcy.answer.value += '6' ">
+                <input type="button" name="" class="oper" value="-" onclick="calcy.answer.value += '-' ">
+            
+           
+                <input type="button" name="" class="main_num" value="7" onclick="calcy.answer.value += '1' ">
+                <input type="button" name="" class="main_num" value="8" onclick="calcy.answer.value += '2' ">
+                <input type="button" name="" class="main_num" value="9" onclick="calcy.answer.value += '3' ">
+                <input type="button" name="" class="oper" value="+" onclick="calcy.answer.value += '+' ">
+           
+            
+               
+            </div>
+            <div class="layer-3">
+                <input type="button" name="" class="main_num" value="." onclick="calcy.answer.value += '.' ">
+                <input type="button" name="" class="main_num" value="0" onclick="calcy.answer.value += '0' ">
+                <input type="button" value="=" onclick="calcy.answer.value = eval(calcy.answer.value)">
+            </div>
+        </form>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/js/all.min.js"></script>
+</body>
+</html>
